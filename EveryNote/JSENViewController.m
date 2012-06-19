@@ -10,9 +10,23 @@
 
 @interface JSENViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *urlField;
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
+
 @end
 
 @implementation JSENViewController
+
+@synthesize urlField;
+@synthesize webView;
+
+- (IBAction)browseTo:(id)sender {
+    // hide keyboard
+    [urlField resignFirstResponder];
+    NSURL *url = [[NSURL alloc] initWithString:urlField.text];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL: url];
+    [webView loadRequest:request];
+}
 
 - (void)viewDidLoad
 {
@@ -22,6 +36,8 @@
 
 - (void)viewDidUnload
 {
+    [self setUrlField:nil];
+    [self setWebView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
