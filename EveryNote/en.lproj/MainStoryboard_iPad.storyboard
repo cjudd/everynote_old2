@@ -31,6 +31,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="browseTo:" destination="2" eventType="touchUpInside" id="pVh-EN-sqm"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL" minimumFontSize="17" id="E26-Fg-KV3">
                                 <rect key="frame" x="20" y="16" width="648" height="31"/>
@@ -41,6 +44,10 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
+                    <connections>
+                        <outlet property="urlField" destination="E26-Fg-KV3" id="nvZ-ei-kOD"/>
+                        <outlet property="webView" destination="zYz-42-ZtT" id="SnC-gT-OPO"/>
+                    </connections>
                 </viewController>
             </objects>
         </scene>
@@ -48,6 +55,10 @@
     <classes>
         <class className="JSENViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/JSENViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="urlField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
