@@ -28,10 +28,16 @@
     [webView loadRequest:request];
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self browseTo:textField];
+    return YES;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    urlField.delegate = self;
 }
 
 - (void)viewDidUnload

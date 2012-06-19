@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JSENViewController : UIViewController
+@interface JSENViewController : UIViewController <UITextFieldDelegate>
 
 @end
