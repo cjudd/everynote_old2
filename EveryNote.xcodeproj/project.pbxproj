@@ -23,15 +23,15 @@
 		C2FC8AA515902289005D19EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C2FC8AA715902289005D19EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C2FC8AA915902289005D19EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C2FC8AAD15902289005D19EC /* EveryNote-Info.plist */ = {isa = PBXFileReference; path = "EveryNote-Info.plist"; sourceTree = "<group>"; };
+		C2FC8AAD15902289005D19EC /* EveryNote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EveryNote-Info.plist"; sourceTree = "<group>"; };
 		C2FC8AAF15902289005D19EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C2FC8AB115902289005D19EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C2FC8AB315902289005D19EC /* EveryNote-Prefix.pch */ = {isa = PBXFileReference; path = "EveryNote-Prefix.pch"; sourceTree = "<group>"; };
-		C2FC8AB415902289005D19EC /* JSENAppDelegate.h */ = {isa = PBXFileReference; path = JSENAppDelegate.h; sourceTree = "<group>"; };
+		C2FC8AB315902289005D19EC /* EveryNote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EveryNote-Prefix.pch"; sourceTree = "<group>"; };
+		C2FC8AB415902289005D19EC /* JSENAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSENAppDelegate.h; sourceTree = "<group>"; };
 		C2FC8AB515902289005D19EC /* JSENAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSENAppDelegate.m; sourceTree = "<group>"; };
 		C2FC8AB815902289005D19EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		C2FC8ABB15902289005D19EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		C2FC8ABD15902289005D19EC /* JSENViewController.h */ = {isa = PBXFileReference; path = JSENViewController.h; sourceTree = "<group>"; };
+		C2FC8ABD15902289005D19EC /* JSENViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSENViewController.h; sourceTree = "<group>"; };
 		C2FC8ABE15902289005D19EC /* JSENViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSENViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
