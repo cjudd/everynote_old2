@@ -15,6 +15,7 @@
 @implementation JSENAddNoteViewController
 
 @synthesize delegate;
+@synthesize titleTextField;
 
 - (IBAction)save:(id)sender {
     [self.delegate savedNote:self];
@@ -25,6 +26,7 @@
 }
 
 - (void)viewDidUnload {
+    [self setTitleTextField:nil];
     [super viewDidUnload];
 }
 

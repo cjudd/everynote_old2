@@ -19,5 +19,6 @@
 @interface JSENAddNoteViewController : UITableViewController
 
 @property (nonatomic, weak) id <AddNoteDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
 
 @end

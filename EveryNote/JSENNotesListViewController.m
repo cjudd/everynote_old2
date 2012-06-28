@@ -8,21 +8,22 @@
 
 #import "JSENNotesListViewController.h"
 
-@interface JSENNotesListViewController ()
+@interface JSENNotesListViewController () {
+    NSMutableArray *notes;
+}
 
 @end
 
 @implementation JSENNotesListViewController
 
 -(void) savedNote:(JSENAddNoteViewController*) controller {
-    // save note here.
-    
+    [notes addObject: controller.titleTextField.text];
+    [[self tableView] reloadData];
     [controller.navigationController popToRootViewControllerAnimated:YES];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-	if ([segue.identifier isEqualToString:@"Add Note Seque"])
-	{
+	if ([segue.identifier isEqualToString:@"Add Note Seque"]) {
         JSENAddNoteViewController *addNoteVC = segue.destinationViewController;
         addNoteVC.delegate = self;
 	}
@@ -31,6 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    notes = [NSMutableArray arrayWithObjects:@"Note 1", @"Note 2", nil];
 }
 
 - (void)viewDidUnload
@@ -40,26 +42,20 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [notes count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"Note Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    // Configure the cell...
+    cell.textLabel.text = [notes objectAtIndex:indexPath.row];
     
     return cell;
 }

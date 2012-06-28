@@ -140,6 +140,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="titleTextField" destination="Xmz-7v-XiV" id="Xdh-BU-fH8"/>
+                    </connections>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="1251" y="846"/>
@@ -166,6 +169,9 @@
     <classes>
         <class className="JSENAddNoteViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/JSENAddNoteViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="titleTextField" candidateClass="UITextField"/>
+            </relationships>
         </class>
         <class className="JSENNotesListViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/JSENNotesListViewController.h"/>
