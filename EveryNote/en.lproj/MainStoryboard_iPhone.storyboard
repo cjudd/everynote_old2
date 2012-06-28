@@ -88,7 +88,7 @@
                     <navigationItem key="navigationItem" title="Notes" id="m7M-Fo-r2A">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="xdX-0a-ACE">
                             <connections>
-                                <segue destination="RUM-Di-Hsl" kind="push" id="hMN-MT-0I2"/>
+                                <segue destination="RUM-Di-Hsl" kind="push" identifier="Add Note Seque" id="hMN-MT-0I2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -134,7 +134,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Add Note" id="ywe-pE-xFd">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="y5N-Cm-tvb"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="y5N-Cm-tvb">
+                            <connections>
+                                <action selector="save:" destination="RUM-Di-Hsl" id="paI-dv-tDT"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
             </objects>

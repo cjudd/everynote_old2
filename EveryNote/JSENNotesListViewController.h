@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JSENAddNoteViewController.h"
 
-@interface JSENNotesListViewController : UITableViewController
+@interface JSENNotesListViewController : UITableViewController <AddNoteDelegate>
 
 @end

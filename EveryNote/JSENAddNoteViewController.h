@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class JSENAddNoteViewController;
+
+@protocol AddNoteDelegate
+
+-(void) savedNote:(JSENAddNoteViewController*) controller;
+
+@end
+
 @interface JSENAddNoteViewController : UITableViewController
+
+@property (nonatomic, weak) id <AddNoteDelegate> delegate;
 
 @end
