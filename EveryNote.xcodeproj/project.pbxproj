@@ -19,6 +19,8 @@
 		C2BDBB52159C0731002987E9 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BDBB46159C0731002987E9 /* Icon-72@2x.png */; };
 		C2BDBB53159C0731002987E9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BDBB47159C0731002987E9 /* Icon.png */; };
 		C2BDBB54159C0731002987E9 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C2BDBB48159C0731002987E9 /* Icon@2x.png */; };
+		C2BDBB7D159C68FA002987E9 /* JSENAddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BDBB7C159C68FA002987E9 /* JSENAddNoteViewController.m */; };
+		C2BDBB80159C69AE002987E9 /* JSENNotesListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BDBB7F159C69AE002987E9 /* JSENNotesListViewController.m */; };
 		C2FC8AA615902289005D19EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FC8AA515902289005D19EC /* UIKit.framework */; };
 		C2FC8AA815902289005D19EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FC8AA715902289005D19EC /* Foundation.framework */; };
 		C2FC8AAA15902289005D19EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2FC8AA915902289005D19EC /* CoreGraphics.framework */; };
@@ -43,6 +45,10 @@
 		C2BDBB46159C0731002987E9 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "EveryNote/images/Icon-72@2x.png"; sourceTree = "<group>"; };
 		C2BDBB47159C0731002987E9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = EveryNote/images/Icon.png; sourceTree = "<group>"; };
 		C2BDBB48159C0731002987E9 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "EveryNote/images/Icon@2x.png"; sourceTree = "<group>"; };
+		C2BDBB7B159C68FA002987E9 /* JSENAddNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSENAddNoteViewController.h; sourceTree = "<group>"; };
+		C2BDBB7C159C68FA002987E9 /* JSENAddNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSENAddNoteViewController.m; sourceTree = "<group>"; };
+		C2BDBB7E159C69AE002987E9 /* JSENNotesListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSENNotesListViewController.h; sourceTree = "<group>"; };
+		C2BDBB7F159C69AE002987E9 /* JSENNotesListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSENNotesListViewController.m; sourceTree = "<group>"; };
 		C2FC8AA115902289005D19EC /* EveryNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EveryNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2FC8AA515902289005D19EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C2FC8AA715902289005D19EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -110,6 +116,10 @@
 				C2FC8ABA15902289005D19EC /* MainStoryboard_iPad.storyboard */,
 				C2FC8ABD15902289005D19EC /* JSENViewController.h */,
 				C2FC8ABE15902289005D19EC /* JSENViewController.m */,
+				C2BDBB7E159C69AE002987E9 /* JSENNotesListViewController.h */,
+				C2BDBB7F159C69AE002987E9 /* JSENNotesListViewController.m */,
+				C2BDBB7B159C68FA002987E9 /* JSENAddNoteViewController.h */,
+				C2BDBB7C159C68FA002987E9 /* JSENAddNoteViewController.m */,
 				C2FC8AAC15902289005D19EC /* Supporting Files */,
 			);
 			path = EveryNote;
@@ -224,6 +234,8 @@
 				C2FC8AB215902289005D19EC /* main.m in Sources */,
 				C2FC8AB615902289005D19EC /* JSENAppDelegate.m in Sources */,
 				C2FC8ABF15902289005D19EC /* JSENViewController.m in Sources */,
+				C2BDBB7D159C68FA002987E9 /* JSENAddNoteViewController.m in Sources */,
+				C2BDBB80159C69AE002987E9 /* JSENNotesListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
